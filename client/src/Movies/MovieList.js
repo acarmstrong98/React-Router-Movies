@@ -8,7 +8,6 @@ export default class MovieList extends Component {
       movies: []
     };
   }
-
   componentDidMount() {
     axios
       .get('http://localhost:5000/api/movies')
@@ -30,7 +29,6 @@ export default class MovieList extends Component {
     );
   }
 }
-
 function MovieDetails({ movie }) {
   const { title, director, metascore, stars } = movie;
   return (
@@ -43,7 +41,6 @@ function MovieDetails({ movie }) {
         Metascore: <strong>{metascore}</strong>
       </div>
       <h3>Actors</h3>
-
       {stars.map(star => (
         <div key={star} className="movie-star">
           {star}
