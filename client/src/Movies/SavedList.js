@@ -27,6 +27,5 @@ import { Link, NavLink } from 'react-router-dom'
       </div>
     );
   }
-}
 
 export default SavedList
